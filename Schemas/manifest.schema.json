@@ -1,2 +1,53 @@
 {
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "ANE0[A-Z,0-9]{12}0"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["repo", "group", "package"]
+    },
+    "name": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    },
+
+    "maintainers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "author": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "postinstall": {
+      "properties": {
+        "*": {
+          "type": "string"
+        }
+      }
+    },
+    "uninstall": {
+      "properties": {
+        "*": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [ "id", "type", "name" ]
 }

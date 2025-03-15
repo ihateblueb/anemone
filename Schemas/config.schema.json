@@ -1,2 +1,10 @@
 {
+  "properties": {
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
 }

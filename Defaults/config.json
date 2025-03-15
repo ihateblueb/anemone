@@ -1,3 +1,6 @@
 {
-
+  "$schema": "https://anemone.remlit.site/Schemas/config.schema.json",
+  "sources": [
+    "https://anepkgs.remlit.site/manifest.json"
+  ]
 }
